@@ -1,4 +1,5 @@
 def fizzbuzz(num)
+  raise "Argument must be a number" unless num.is_a?(Integer)
   if num % 15 == 0
   	return "fizzbuzz"
   elsif
