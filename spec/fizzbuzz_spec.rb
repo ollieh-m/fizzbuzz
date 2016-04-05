@@ -78,4 +78,10 @@ describe 'fizzbuzz' do
   	end
   end
 
+  context 'when not passed an integer' do
+    it 'raises error' do
+      expect { fizzbuzz("a") }.to raise_error("Argument must be a number")
+    end
+  end
+
 end
